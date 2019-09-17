@@ -1,0 +1,29 @@
+body {
+    text-align: center;
+    margin: 2rem;
+}
+#id_description {
+    line-height: 20px;
+    width: 350px;
+    resize: all;
+}
+table {
+    margin: 2rem auto;
+}
+th {
+    text-align:center;
+}
+#update {
+    color: cornflowerblue;
+    text-decoration: none;
+}
+#delete {
+    color: red;
+    text-decoration: none;
+}
+#edit {
+    color: cornflowerblue
+}
+#deleteitem {
+    color: red;
+}

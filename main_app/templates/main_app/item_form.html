@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+ 
+{% block content %}
+{% if object %}
+    <h1>Edit <span id="edit">{{object.description}}</span></h1>
+    <hr>
+    <form action="" method="POST" class="pure-form">
+        {% csrf_token %}
+        <table class="pure-table">
+            {{ form.as_p }}
+            <input type="submit" value="Edit Item" class="pure-button">
+        </table>
+    </form>
+{% else %}
+    <h1>Add Wish Item</h1>
+    <hr>
+    <form action="" method="POST" class="pure-form">
+        {% csrf_token %}
+        <table class="pure-table">
+            {{ form.as_p }}
+            <input type="submit" value="Add Item" class="pure-button">
+        </table>
+    </form>
+{% endif %}
+{% endblock %}
